@@ -1,9 +1,9 @@
 public class Pravokutnik extends Likovi {
-//    private String naziv;
-    int a,b;
+    //    private String naziv;
+    int a, b;
 
     public Pravokutnik(String naziv, int a, int b) {
-        super (naziv);
+        super(naziv);
         this.a = a;
         this.b = b;
     }
@@ -12,11 +12,12 @@ public class Pravokutnik extends Likovi {
     public double povrsina() {
         return a * b;
     }
+
     @Override
     public double opseg() {
-        return 2*(a+b);
+        return 2 * (a + b);
     }
 
 
-    }
 }
+

@@ -2,21 +2,31 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
- /*       Dobili ste projektni zadatak razviti konzolnu aplikaciju „Učilica”. Cilj te aplikacije je pomoći učenicima osnovne škole da lakše savladaju neke značajke osnovnih geometrijskih likova.
-        Geometrijski likovi koje ćemo pokriti su: Trokut, Krug i Pravokutnik
-        Trokut je definiran s 3 stranice
-        Kruge je definiran radijusom
-        Pravokutnik je definiran s 2 stranice
-        Svaki geometrijski lik ima svoj Naziv.
-        Kreirate klase, potrebne varijable i konstruktor
+ /*       Kreirajte po 1-2 objekta za svaku klasu
+          primjeniti metode pojedinih klasa
         */
-        Scanner sc = new Scanner(System.in);
 
 
-        System.out.println("Unesite geometrijski lik (npr. trokut, krug ili pravokutnik) " );
-        String unos =sc.next();
+        Trokut trokut1 = new Trokut("Trokut1", 5, 5, 5);
+        Trokut trokut2 = new Trokut("Trokut2", 5, 8, 3);
 
 
+        System.out.println(trokut1.naziv + ": Opseg = " + trokut1.opseg() + ", Površina = " + trokut1.povrsina());
+        System.out.println(trokut2.naziv + ": Opseg = " + trokut2.opseg() + ", Površina = " + trokut2.povrsina());
+
+
+
+        Krug krug1 = new Krug("Krug1", 7);
+        Krug krug2 = new Krug("Krug2", 3);
+
+        System.out.println(krug1.naziv + ": Opseg = " + krug1.opseg() + ", Površina = " + krug1.povrsina());
+        System.out.println(krug1.naziv + ": Opseg = " + krug2.opseg() + ", Površina = " + krug2.povrsina());
+
+        Pravokutnik pravokutnik1 = new Pravokutnik("Pravokutnik1", 4, 7);
+        Pravokutnik pravokutnik2 = new Pravokutnik("Pravokutnik2", 10, 8);
+
+        System.out.println(pravokutnik1.naziv + ": Opseg = " + pravokutnik1.opseg() + ", Površina = " + pravokutnik1.povrsina());
+        System.out.println(pravokutnik2);
 
     }
 

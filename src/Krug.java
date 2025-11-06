@@ -1,9 +1,9 @@
 public class Krug extends Likovi {
-//    private String naziv;
+    //    private String naziv;
     private double radius;
 
     public Krug(String naziv, double radius) {
-        super (naziv);
+        super(naziv);
         this.radius = radius;
     }
 
