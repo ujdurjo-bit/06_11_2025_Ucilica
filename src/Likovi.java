@@ -1,4 +1,4 @@
-public abstract class Likovi {
+public abstract class Likovi implements Comparable<Likovi> {
     public String naziv;
 
     public abstract double povrsina();
@@ -13,5 +13,10 @@ public abstract class Likovi {
     public String toString() {
         return "Naziv " + naziv + ", Površina: " + povrsina() + ", Opseg: " + opseg();
 
+    }
+
+    @Override
+    public int compareTo(Likovi o) {
+        return Double.valueOf(povrsina()).compareTo(Double.valueOf(o.povrsina()));
     }
 }

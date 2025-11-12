@@ -11,7 +11,7 @@ public class Trokut extends Likovi {
 
     @Override
     public double povrsina() {
-        double srednjica = (a + b + c) / 2;
+        double srednjica = (a + b + c) / 2.0;
         return Math.sqrt(srednjica * (srednjica - a) *  (srednjica - b) * (srednjica - c));
     }
 
